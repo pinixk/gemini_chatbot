@@ -91,7 +91,7 @@ class _ChatroomState extends State<Chatroom> {
   @override
   void initState() {
     super.initState();
-    _model = GenerativeModel(model: 'gemini-1.5-flash-latest', apiKey: _apiKey);
+    _model = GenerativeModel(model: gemini_model, apiKey: _apiKey);
     _chatSession = _model.startChat();
   }
 
